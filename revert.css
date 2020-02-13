@@ -1,21 +1,5 @@
 /* bad css by avosirenfal, PRs welcome https://github.com/avosirenfal/google-search-revert */
 
-/* make result container flexbox so order property works */
-.r > a {
-	display: flex;
-	flex-direction: column;
-}
-
-/* move url to bottom */
-.TbwUpd {
-	order: 5;
-}
-
-/* restore link color */
-.TbwUpd cite, a.ab_button, a.ab_button:visited {
-    color: #006d21
-}
-
 /* make container flex so order property works */
 .r > a {
 	display: flex;
@@ -24,6 +8,7 @@
 
 /* move url to bottom */
 .TbwUpd {
+	position: relative;
 	order: 5;
 }
 
@@ -38,26 +23,6 @@
 }
 
 /* dropdown arrow */
-.B6fmyf {
-	top: 30px; /* hardcoded guess */
-}
-
-/* hide now unnecessary br that creates empty space */
-.r > a > br {
-	display: none;
-}
-
-/* hide favicons */
-.r img.xA33Gc {
-	display: none;
-}
-
-/* hide underline on url */
-#rcnt a:hover {
-	text-decoration: none;
-}
-
-/* dropdown arrow position */
 .B6fmyf {
 	top: 30px; /* hardcoded guess */
 }
